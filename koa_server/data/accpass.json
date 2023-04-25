@@ -1,0 +1,68 @@
+[
+    {
+        "id": 1,
+        "name": "L1",
+        "account": "admin1",
+        "passWord": "123456"
+    },
+    {
+        "id" : 2,
+        "name": "L2",
+        "account": "admin2",
+        "passWord": "1234567"
+    },
+    {
+        "id" : 3,
+        "name": "Q1",
+        "account": "",
+        "passWord": ""
+    },
+    {
+        "id" : 4,
+        "name": "Q2",
+        "account": "",
+        "passWord": ""
+    },
+    {
+        "id" : 5,
+        "name": "Q3",
+        "account": "",
+        "passWord": ""
+    },
+    {
+        "id" : 6,
+        "name": "Q4",
+        "account": "",
+        "passWord": ""
+    },
+    {
+        "id" : 7,
+        "name": "J1",
+        "account": "",
+        "passWord": ""
+    },
+    {
+        "id" : 8,
+        "name": "P1",
+        "account": "",
+        "passWord": ""
+    },
+    {
+        "id" : 9,
+        "name": "X1",
+        "account": "",
+        "passWord": ""
+    },
+    {
+        "id" : 10,
+        "name": "G1",
+        "account": "",
+        "passWord": ""
+    },
+    {
+        "id" : 11,
+        "name": "Q10",
+        "account": "admin2",
+        "passWord": "123456"
+    }
+]

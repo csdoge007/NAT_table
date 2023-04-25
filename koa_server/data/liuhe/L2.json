@@ -1,0 +1,24 @@
+[
+    {
+        "id": "320981199907143065",
+        "name": "王朔",
+        "sex": "男",
+        "time": "2022-09-16-17:24:25",
+        "place": "L2",
+        "result": "waiting",
+        "inde": 0,
+        "flag": false,
+        "error": 0
+    },
+    {
+        "id": "320981200205242768",
+        "name": "丁九",
+        "sex": "男",
+        "time": "2022-09-17-13:14:25",
+        "place": "L2",
+        "result": "waiting",
+        "inde": 1,
+        "flag": false,
+        "error": 0
+    }
+]

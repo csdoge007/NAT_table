@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <button id="connect">连接</button>
+    <button id="send" disabled="true">发送数据</button> <br>
+    从服务器接收的数据如下: <br>
+    <span id="recv"></span>
+    <script>
+        // 传输调试
+        // let xmlhttp = new XMLHttpRequest();
+        // let url = "http://api.heclouds.com/devices/979628472/datapoints?datastream_id=ds_test&start=2017-01-01T00:00:00&limit=3";
+        // xmlhttp.open("GET", url, true);
+        // xmlhttp.send();
+        // console.log(xmlhttp.responseText);
+
+
+
+
+
+        let connect = document.querySelector('#connect')
+        let send = document.querySelector('#send')
+        let recv = document.querySelector('#recv')
+        let ws = null
+        connect.onclick = function () {
+            ws = new WebSocket('ws://localhost:9998')
+            ws.onopen = () => {
+                console.log('连接服务端成功了')
+                send.disabled = false
+            }
+            ws.onclose = () => {
+                console.log('连接服务器失败')
+                send.disabled = true
+            }
+            ws.onmessage = msg => {
+                console.log('接收到服务端发送过来的数据了')
+                console.log(msg)
+                recv.innerHTML = msg.data
+            }
+        }
+        send.onclick = function () {
+            ws.send(JSON.stringify({
+                action: 'fullScreen',
+                socketType: 'fullScreen',
+                chartName: 'trend',
+                value: true
+            }))
+        }
+    </script>
+</body>
+
+</html>

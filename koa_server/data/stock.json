@@ -1,0 +1,41 @@
+[{
+    "name": "J1",
+    "stock": 2103, 
+    "sales": 256
+}, {
+    "name": "Q1",
+    "stock": 3431,
+    "sales": 102
+}, {
+    "name": "Q2",
+    "stock": 2214,
+    "sales": 285
+}, {
+    "name": "Q3",
+    "stock": 1084,
+    "sales": 149
+}, {
+    "name": "Q4",
+    "stock": 2018,
+    "sales": 157
+}, {
+    "name": "L1",
+    "stock": 1203,
+    "sales": 152
+}, {
+    "name": "L2",
+    "stock": 1890,
+    "sales": 176
+}, {
+    "name": "P1",
+    "stock": 2013,
+    "sales": 108
+}, {
+    "name": "X1",
+    "stock": 2439,
+    "sales": 174
+}, {
+    "name": "G1",
+    "stock": 2034,
+    "sales": 206
+}]
